@@ -1,0 +1,34 @@
+
+
+Instruction:
+
+Install collections and unittest. I used python 3.8 for the solution and followed PEP8 standards.
+
+Description:
+
+Solution has two python files. 
+
+a) finder.py
+b) test.py
+
+finder.py is the main solution file. Here I have made a class named as Finder. It has a parameterised constructor and a function named as find(), as described in the problem description.
+
+To run the the solution file, please use "python finder.py"
+
+test.py is the unit tests for the Finder class. 
+
+
+Assumption:
+I assumed the resulting list should contain unique strings. For that reason, i have used set to remove any redundant entry.
+As an example if the string list contain ['asd', 'asdd', 'asd', 'glk', 'gre'] and matching word is "sad".
+Then application should return only ['asd'], though there are two entry of 'asd' in the string list.
+
+Logic to find matching strings( same letters, order can be different):
+I made a counter for each of the words. Then using it, i find the intersection of those counters. this intersection will give the shared characters. If the sum of the number of shared characters is the same with the length of the word, then two string will have same letters, but order can be different.
+
+
+
+
+
+
+
